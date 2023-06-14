@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+          background-color: aqua;
+          
+        }
+        .box{
+            background-color: green;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            /* animation-name: ashok; */
+            animation-name: ashok2;
+            animation-duration: 10s;
+            animation-iteration-count: 1;
+            font-size: medium;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-out;
+            animation-delay: 2s;
+            
+
+        }
+        @keyframes ashok {
+            from{
+                width: 250px
+
+            }
+            to{
+                width: 100vw;
+            
+            }
+            
+        }
+        @keyframes ashok2{
+            0%{
+                top: 0px;
+                left: 0px;
+
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+
+            }
+            50%{
+                top: 250px;
+                left: 500px;
+
+            }
+            80%{
+                top: 0px;
+                left: 500px;
+
+            }
+            90%{
+                top: 0%;
+                left: 0%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+    
+</body>
+</html>
